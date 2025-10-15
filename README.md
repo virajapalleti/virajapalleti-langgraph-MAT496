@@ -18,3 +18,10 @@ _Lesson03: Langgraph studio_
 Requires no code, learnt how to navigate through Langgraph Studio and visualised the graph implemented in the previous notebook.  
 Also made it for my own implemented graph!  
 [module01/LanggraphStudio.ipynb](module01\LanggraphStudio.ipynb)
+
+_Lesson04: Chain_
+Through this I've learnt how chat models interact with tools through graphs execution. Model request tool calls --> graph executes them --> results come back as msgs.
+
+- MessageState = conversation history stored as a list of msgs using "add_messages" reducer.
+- Tool binding and execution = attach func to chet models, run tools and then gets back the result to the msg stream.  
+  [module01/Chain.ipynb](module01/Chain.ipynb)
