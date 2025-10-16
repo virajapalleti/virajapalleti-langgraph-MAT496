@@ -25,3 +25,13 @@ Through this I've learnt how chat models interact with tools through graphs exec
 - MessageState = conversation history stored as a list of msgs using "add_messages" reducer.
 - Tool binding and execution = attach func to chet models, run tools and then gets back the result to the msg stream.  
   [module01/Chain.ipynb](module01/Chain.ipynb)
+
+_Lesson05: Router_
+Learnt that the graph routes ebtween LLM responses and the tool execution based on model output.  
+(Created a tool and added it to the model's available tools list. The LLM sees the tool and decides on its own whether it needs it or not.)
+
+- tools_condition checks if model requests a tool call
+- Conditional edge routes to ToolNode if tool needed, or ends if direct response sufficient
+
+This is way smarter than hardcoded if/else statements as the LLM dynamically decides the routing based on understanding the user's question, not pre-programmed rules.  
+[module01/Router.ipynb](module01/Routuer.ipynb)
