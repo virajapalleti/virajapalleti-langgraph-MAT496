@@ -51,3 +51,14 @@ Added memory to our agents. Created a thread_id to maintain conversation context
 - Same thread ID = agent has full history, can reference past interactions
 - Different thread ID = fresh start, no memory of previous conversation  
   [module01/AgentMemory.ipynb](module01/AgentMemory.ipynb)
+
+## **Module02:**
+
+_Lesson01: State Schema_
+Schema defines what data structure your graph uses - basically the "shape" of the data flowing through your graph. Schema makes graphs predictable - you know exactly what's available at each step and how updates behave.
+
+- TypedDict = Define state as a Python TypedDict specifying exact fields and types. Every node reads from and writes to these fields.
+- Pydantic = While TypedDict just defines types, Pydantic actually enforces them at runtime and validates data.
+
+(catches type errors immediately when state is updated)
+[module02/StateSchema.ipynb](module02/StateSchema.ipynb)
