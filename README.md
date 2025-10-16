@@ -35,3 +35,12 @@ Learnt that the graph routes ebtween LLM responses and the tool execution based 
 
 This is way smarter than hardcoded if/else statements as the LLM dynamically decides the routing based on understanding the user's question, not pre-programmed rules.  
 [module01/Router.ipynb](module01/Routuer.ipynb)
+
+_Lesson06: Agent_  
+Built an agent that can use multiple tools in sequence. The model doesn't just call one tool and stop - it keeps going in a loop until needed. It is not pre-programmed.
+
+- Calls tool based on the circumstance
+- Tool gives output
+- If the output is not an 'end' outcome, this output is given back
+- Process repeats until task is done  
+  [module01/Agent.ipynb](module01/Agent.ipynb)
