@@ -45,7 +45,7 @@ Built an agent that can use multiple tools in sequence. The model doesn't just c
 - Process repeats until task is done  
   [module01/Agent.ipynb](module01/Agent.ipynb)
 
-_Lesson07: Agent Memory_
+_Lesson07: Agent Memory_  
 Added memory to our agents. Created a thread_id to maintain conversation context. When asking follow-up questions that reference earlier ones, use the same thread ID. Now, the agent "remembers" the results and tools it got earlier.
 
 - Same thread ID = agent has full history, can reference past interactions
