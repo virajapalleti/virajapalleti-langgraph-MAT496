@@ -75,3 +75,10 @@ _Lesson03: Multiple Schemas_
 - Useful for restricting what is present in the input and output schemas of a graph. ( Basically encapsulation)
 - We have; Input Schema, Private Schema(the other two nodes communicate using this) and Output Schema.
   [MultipleSchemas.ipynb](module02/MultipleSchemas.ipynb)
+
+_Lesson04: Trimming and Filtering Mesages_
+Sending the entire history of a conversation to the LLM wastes tokens, hits length limits and is slower. Thus we trim and filter msgs:
+
+- Trimming = keeps only the most recent 'x' msgs or msgs within the token budget
+- Filtering = Removes specific msg types like tool calls etc. Role-based mssg can also be filtered.
+  [Trim-FilterMessages.ipynb](module02/Trim-FilterMessages.ipynb)
