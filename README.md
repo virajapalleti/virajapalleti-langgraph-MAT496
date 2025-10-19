@@ -62,3 +62,10 @@ Schema defines what data structure your graph uses - basically the "shape" of th
 
 (catches type errors immediately when state is updated)
 [module02/StateSchema.ipynb](module02/StateSchema.ipynb)
+
+_Lesson02: State Reducers_
+
+- Reducers allow us to specify hwo to perform state updates.
+- When nodes run in parallel and both update the same field; without a reducer: condition - one overwrites the other randomly
+- We use: Annotated[type, reducer]  
+  [module02/StateReducer.ipynb](module02/StateReducer.ipynb)
