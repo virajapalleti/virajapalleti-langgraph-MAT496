@@ -65,7 +65,13 @@ Schema defines what data structure your graph uses - basically the "shape" of th
 
 _Lesson02: State Reducers_
 
-- Reducers allow us to specify hwo to perform state updates.
+- Reducers allow us to specify how to perform state updates.
 - When nodes run in parallel and both update the same field; without a reducer: condition - one overwrites the other randomly
 - We use: Annotated[type, reducer]  
   [module02/StateReducer.ipynb](module02/StateReducer.ipynb)
+
+_Lesson03: Multiple Schemas_
+
+- Useful for restricting what is present in the input and output schemas of a graph. ( Basically encapsulation)
+- We have; Input Schema, Private Schema(the other two nodes communicate using this) and Output Schema.
+  [MultipleSchemas.ipynb](module02/MultipleSchemas.ipynb)
