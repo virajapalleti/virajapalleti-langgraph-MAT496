@@ -92,3 +92,10 @@ _Lesson05: Chatbot w/ Summarizing Messages and Memory_
 - LangGraph's checkpointer automatically saves state including summaries. When conversation resumes (of the same thread_id), summary is reused.
 - Better/practical approach for token usage.  
   [ChatbotSummarization.ipynb](module02/ChatbotSummarization.ipynb)
+
+_Lesson06: Chatbot w/ Summarizing Messages and External Memory_  
+When a notebook restarts/server reboots, all the conversation history disappears as by default LangGraph stores state in RAM. Thus we used external checkpoints, to persist state to actual databases so the conversations remain even after restart.
+
+- Uses SQLite database file to store every thread's complete state
+- Combining with summarization techniques, we dont have to pay to re-summarize the summary that's already saved in the checkpoint, even after resuming.  
+  [ChatbotExternalMemory.ipynb](module02/ChatbotExternalMemory.ipynb)
