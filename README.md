@@ -100,7 +100,7 @@ When a notebook restarts/server reboots, all the conversation history disappears
 - Combining with summarization techniques, we dont have to pay to re-summarize the summary that's already saved in the checkpoint, even after resuming.  
   [ChatbotExternalMemory.ipynb](module02/ChatbotExternalMemory.ipynb)
 
-## **Module02:**
+## **Module03:**
 
 _Lesson01: Streaming_  
 [module03/StreamingInterruption.ipynb](module03/StreamingInterruption.ipynb)
