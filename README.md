@@ -76,9 +76,19 @@ _Lesson03: Multiple Schemas_
 - We have; Input Schema, Private Schema(the other two nodes communicate using this) and Output Schema.
   [MultipleSchemas.ipynb](module02/MultipleSchemas.ipynb)
 
-_Lesson04: Trimming and Filtering Mesages_  
+_Lesson04: Trimming and Filtering Mesages_
 Sending the entire history of a conversation to the LLM wastes tokens, hits length limits and is slower. Thus we trim and filter msgs:
 
 - Trimming = keeps only the most recent 'x' msgs or msgs within the token budget
 - Filtering = Removes specific msg types like tool calls etc. Role-based mssg can also be filtered.
   [Trim-FilterMessages.ipynb](module02/Trim-FilterMessages.ipynb)
+
+_Lesson05: Chatbot w/ Summarizing Messages and Memory_
+
+- After N messages (notebook uses 6), we trigger the summarization node
+- Summary node summarises old messages into brief outline
+- Replaces old messages with summary + keep recent messages (or deletes 2 msgs, depending on user preference)
+- We also only use the summarise msgs if the len(messages) is over a particular threshold.
+- LangGraph's checkpointer automatically saves state including summaries. When conversation resumes (of the same thread_id), summary is reused.
+- Better/practical approach for token usage.  
+  [ChatbotSummarization.ipynb](module02/ChatbotSummarization.ipynb)
