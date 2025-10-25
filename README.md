@@ -103,4 +103,13 @@ When a notebook restarts/server reboots, all the conversation history disappears
 ## **Module03:**
 
 _Lesson01: Streaming_  
-[module03/StreamingInterruption.ipynb](module03/StreamingInterruption.ipynb)
+Streaming gives visibility into the graph's execution process, whether you want to see everything (values) or just the changes (updates)  
+Value Mode:
+
+- Displays the complete graph state after each node executes
+- See the full picture at every step
+
+Updates Mode:
+
+- Only shows what changed when a node is called  
+  [module03/StreamingInterruption.ipynb](module03/StreamingInterruption.ipynb)
