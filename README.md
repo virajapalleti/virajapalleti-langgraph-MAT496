@@ -113,3 +113,8 @@ Updates Mode:
 
 - Only shows what changed when a node is called  
   [module03/StreamingInterruption.ipynb](module03/StreamingInterruption.ipynb)
+
+_Lesson02: Breakpoints_  
+Learned why breakpoints are needed (safety, control, quality) and three use cases: approval for authorizing actions, debugging, and editing for modifying execution.
+Learnt to apply pause points during agent execution that allow human intervention.  
+[Breakpoints.ipynb](module03/Breakpoints.ipynb)
