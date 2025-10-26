@@ -118,3 +118,10 @@ _Lesson02: Breakpoints_
 Learned why breakpoints are needed (safety, control, quality) and three use cases: approval for authorizing actions, debugging, and editing for modifying execution.
 Learnt to apply pause points during agent execution that allow human intervention.  
 [Breakpoints.ipynb](module03/Breakpoints.ipynb)
+
+_Lesson03: Editing state and Human feedback_  
+Can directly modify graph state at breakpoints using update_state function and enables realtime correction of agent behavior during the execution.  
+It's best useful if the agent is running in a wrogn direction because I can just jump in to correct.  
+
+- Asked model to do something -> Hits breakpoint and edited the command -> Model continued with updated instructions  
+  [EditGraphState.ipynb](module03/EditStateHumanFeedbac.ipynb)
