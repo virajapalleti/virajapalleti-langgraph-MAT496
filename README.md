@@ -133,6 +133,7 @@ Regular breakpoints fire every time regardless of input but dynamic ones only tr
   [DynamicBreakpoints.ipynb](module03/DynamicBreakpoints.ipynb)
 
 _Lesson05: Time Travel_
+(It's called time travel because you can go back into any point of executon and change/review it)  
 Each node execution creates a checkpoint with a unique ID and Checkpoints store the complete state at that point.  
 Replaying = Observe the flow from a past checkpoint without re-executing (Just view what happened from that point forward)  
 Forking = Re-run from a checkpoint with different input (Make edits to the state and execute from that point onwards)
