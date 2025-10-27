@@ -121,7 +121,13 @@ Learnt to apply pause points during agent execution that allow human interventio
 
 _Lesson03: Editing state and Human feedback_  
 Can directly modify graph state at breakpoints using update_state function and enables realtime correction of agent behavior during the execution.  
-It's best useful if the agent is running in a wrogn direction because I can just jump in to correct.  
+It's best useful if the agent is running in a wrogn direction because I can just jump in to correct.
 
 - Asked model to do something -> Hits breakpoint and edited the command -> Model continued with updated instructions  
   [EditGraphState.ipynb](module03/EditStateHumanFeedbac.ipynb)
+
+_Lesson04: Dynamic Breakpoints_  
+Regular breakpoints fire every time regardless of input but dynamic ones only trigger when specific conditions are met. (We can aslo include custom error messages). These are evaluated inside nodes during execution.
+
+- Use NodeInterrupt to check conditions within a node -> If condition is true, graph pauses itself -> Resume using update_state() like before  
+  [DynamicBreakpoints.ipynb](module03/DynamicBreakpoints.ipynb)
