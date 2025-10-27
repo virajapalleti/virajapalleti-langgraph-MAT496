@@ -131,3 +131,12 @@ Regular breakpoints fire every time regardless of input but dynamic ones only tr
 
 - Use NodeInterrupt to check conditions within a node -> If condition is true, graph pauses itself -> Resume using update_state() like before  
   [DynamicBreakpoints.ipynb](module03/DynamicBreakpoints.ipynb)
+
+_Lesson05: Time Travel_
+Each node execution creates a checkpoint with a unique ID and Checkpoints store the complete state at that point.  
+Replaying = Observe the flow from a past checkpoint without re-executing (Just view what happened from that point forward)  
+Forking = Re-run from a checkpoint with different input (Make edits to the state and execute from that point onwards)
+
+- get_state_history() - View full state history of the graph
+- graph.stream(checkpoint_id=...) - Jump to any checkpoint to replay or fork  
+  [TimeTravel.ipynb](module03/TimeTravel.ipynb)
