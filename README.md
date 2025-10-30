@@ -141,3 +141,13 @@ Forking = Re-run from a checkpoint with different input (Make edits to the state
 - get_state_history() - View full state history of the graph
 - graph.stream(checkpoint_id=...) - Jump to any checkpoint to replay or fork  
   [TimeTravel.ipynb](module03/TimeTravel.ipynb)
+
+## **Module04:**
+
+_Lesson01: Parallelization_
+
+- fanning out means sending one node’s output to multiple parallel nodes, while fanning in combines results from multiple nodes into one.
+- reducer = updates all the merges safely.
+- custom reducer can control the execution order of parallel states (for consistent updates).
+- operator.add helps combine values correctly instead of overwriting them.  
+  [Parallelization.ipynb](module04/parallelization.ipynb)
