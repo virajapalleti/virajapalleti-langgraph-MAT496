@@ -153,6 +153,11 @@ _Lesson01: Parallelization_
   [Parallelization.ipynb](module04/parallelization.ipynb)
 
 _Lesson02: Sub-Graphs_  
-Understood the concept of subgraphs, which allow dividing a main graph into smaller, independent sections that manage their own states. They improve controllabity by enabling to operate separately and still being connected to the workflow.   
+Understood the concept of subgraphs, which allow dividing a main graph into smaller, independent sections that manage their own states. They improve controllabity by enabling to operate separately and still being connected to the workflow.  
 Parent graphs communicate with subgraphs through overlapping keys, enabling data sharing between them. Multi-agent systems = each agent can have its own subgraph to handle specific tasks.  
 [SubGraph.ipynb](module04/SubGraph.ipynb)
+
+_Lesson03: Map Reduce_  
+I learned about MapReduce, which is basically a way to break a big task into smaller parts and run them all at the same time. It has two steps — the Map phase, where the main task gets divided into several subtasks, and the Reduce phase, which collects the results from all those subtasks and combines them into one final output.  
+The Send function in the LangGraph API helps send each item in a list to a specific node (like generate_joke)
+[MapReduce.ipynb](module04/MapReduce.ipynb)
